@@ -28,7 +28,7 @@
             'z': 'zhihu.com','m': 'www.mcdonalds.com.cn'
         }
         // 取出 localStorage 中的 zzz 对应的 hash
-        var hashInLocalStorage = xxxxx('zzz')
+        var hashInLocalStorage = getFromLocalStorage('zzz')
         if(hashInLocalStorage){
             hash = hashInLocalStorage
         }
@@ -42,7 +42,7 @@
             main.appendChild(div)
             var row = keys[index] // 第一个数组 第二个数组 第三个数组
             var index2 = 0
-            while(index2 < row['length']){xu
+            while(index2 < row['length']){
                 var kbd = tag('kbd')
                 var span = tag('span')
                 span.textContent = row[index2]
